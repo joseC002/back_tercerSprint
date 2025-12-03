@@ -33,6 +33,7 @@ function buildIdFilter(id: string, extra?: Record<string, unknown>) {
 function normalize(doc: any) {
   return {
     id: String(doc?.id ?? doc?._id),
+    _id: doc?._id,
     ownerId: doc?.ownerId ?? undefined,
     title: doc?.title ?? doc?.descripcion ?? "Oferta sin titulo",
     description: doc?.description ?? doc?.descripcion ?? "",
