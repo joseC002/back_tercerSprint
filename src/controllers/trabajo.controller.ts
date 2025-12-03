@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
 import { BaseController } from "./base.controller";
-import { Trabajo } from "../models/trabajo.model";
+import  ITrabajo  from "../models/trabajo.model";
 
 export class TrabajoController extends BaseController {
   constructor() {
-    super(Trabajo);
+    super(ITrabajo);
   }
 
   // Buscar trabajos por estado
